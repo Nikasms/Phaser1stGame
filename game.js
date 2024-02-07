@@ -66,7 +66,8 @@ this.anims.create({
     frameRate: 10,
     repeat: -1
 });
-
+// гравець стоїть на платформі
+this.physics.add.collider(player, platforms);
 }
 
 function update ()
