@@ -13,7 +13,9 @@ var config = {
 var game = new Phaser.Game(config);
 
 function preload ()
-{ this.load.image('sky', 'assets/sky.png');
+{ //завантажили ресурси 
+
+ this.load.image('sky', 'assets/sky.png');
 this.load.image('ground', 'assets/platform.png');
 this.load.image('star', 'assets/star.png');
 this.load.image('bomb', 'assets/bomb.png');
@@ -24,7 +26,10 @@ this.load.spritesheet('dude',
 }
 
 function create ()
-{
+{//розмір картинок
+    this.add.image(400, 300, 'sky');
+    this.add.image(400, 300, 'star');
+
 }
 
 function update ()
